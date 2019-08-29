@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#92C9FA"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:id="@+id/ll_account"
+        android:layout_below="@+id/img_icon"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="账号" />
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textView6"
+            android:ems="10"
+            android:layout_centerVertical="true"
+            android:hint="请输入账号"
+            android:inputType="textPersonName"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_account"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="密码" />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/et_password"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/img_showPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:ems="10"
+            android:hint="请输入密码"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/img_showPassword"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hidepassword"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/ll_password"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape"
+        android:padding="2dp"
+        android:text="登录"
+        android:textColor="#92C9FA"
+        android:textSize="20sp" />
+
+
+    <RelativeLayout
+        android:layout_below="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/cb_rememberAccount"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住账号" />
+
+        <TextView
+            android:id="@+id/txt_register"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#92C9FA"
+            android:layout_centerVertical="true"
+            android:text="没有账户？点击注册"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_myBlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:autoLink="all"
+        android:text="https://imswy.blog.csdn.net"
+        android:textColor="#fff"
+        android:textSize="13sp" />
+
+</RelativeLayout>
